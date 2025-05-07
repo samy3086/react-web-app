@@ -1,0 +1,71 @@
+/* Base styles */
+body {
+  font-family: 'Poppins', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Search bar styling */
+.search-container {
+  transition: all 0.3s ease;
+  flex-grow: 1;
+  max-width: 500px;
+}
+
+.search-container .input-group {
+  transition: all 0.2s ease;
+}
+
+.search-focused .input-group {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.search-container input {
+  transition: all 0.2s ease;
+}
+
+.search-container input:focus {
+  box-shadow: none;
+}
+
+/* Dark mode specific styles for search bar */
+[data-theme='dark'] .search-container .input-group {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .search-container .input-group-text,
+[data-theme='dark'] .search-container .form-control,
+[data-theme='dark'] .search-container .btn-transparent {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .search-container .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Product card hover effects */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+.quick-add-overlay {
+  transition: transform 0.3s ease, opacity 0.2s ease;
+  opacity: 0;
+}
+
+.product-card:hover .quick-add-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-container {
+    max-width: 100%;
+  }
+}
