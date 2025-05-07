@@ -3,8 +3,8 @@
 ## Overview
 HS-Shop is a modern e-commerce web application built with React. It provides users with a seamless shopping experience, offering a wide range of trendy clothing and quality products.
 ## GROUP MEMBERS:
-KAYOUCHE AHMED SAMY
-HARZELLI ABDELMOUNAIM
+- **KAYOUCHE Samy**
+- **HARZELLI Abdelmounaim**
 ## Live Demo
 https://bejewelled-treacle-1b383c.netlify.app
 
